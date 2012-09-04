@@ -28,7 +28,6 @@ class Plugin_twitterjs extends Plugin {
             var re = /((http|https|ftp):\/\/[\w?=&.\/-;#~%-]+(?![\w\s?&.\/;#~%"=-]*>))/g;
             var show_intents = '.$show_intents.';
             var innerHTML;
-            console.log("show_intents: " + show_intents);
             
             for(var t in data){
               console.log("t: " + t + ", count: " + "'.$count.'");
@@ -38,7 +37,6 @@ class Plugin_twitterjs extends Plugin {
               
               var intents = "";
               if (show_intents) {
-                console.log(data[t].id_str);
                 intents = intents + \'<ul class="intents">\';
                 intents = intents + \'<li><a href="https://twitter.com/intent/tweet?in_reply_to=##ID##" class="reply">Reply</a></li>\';
                 intents = intents + \'<li><a href="https://twitter.com/intent/retweet?tweet_id=##ID##" class="retweet">Retweet</a></li>\';
