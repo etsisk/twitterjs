@@ -30,7 +30,6 @@ class Plugin_twitterjs extends Plugin {
             var innerHTML;
             
             for(var t in data){
-              console.log("t: " + t + ", count: " + "'.$count.'");
               var tweet = data[t].text.replace(re, \'<a target="_blank" href="$1">$1</a> \');
               tweet = tweet.replace(/(^|\s)@(\w+)/g, \'$1<a href="http://www.twitter.com/$2" target="_blank">@$2</a>\');
               tweet = tweet.replace(/(^|\s)#(\w+)/g, \'$1<a href="http://search.twitter.com/search?q=%23$2" target="_blank">#$2</a>\');
