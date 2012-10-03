@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * October 2, 2012
+ * Inspired by first party add-on created by Mubashar Iqbal (http://mubs.me)
+ */
+
 class Plugin_twitterjs extends Plugin {
 
   var $meta = array(
